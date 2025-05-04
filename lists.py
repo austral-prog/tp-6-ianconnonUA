@@ -23,10 +23,9 @@ def is_empty(list_to_check):
 
 
 def check_lists(list_to_compare1, list_to_compare2):
-    if list_to_compare1[3] == list_to_compare2[3]:
-        return True
-    else:
-        return False
+    if len(list_to_compare1) > 2 and len(list_to_compare2) > 2:
+        return list_to_compare1[2] == list_to_compare2[2]
+    return False
 
 def list_of_lists(list_of_lists_to_modify):
     list0 = list_of_lists_to_modify[0]
